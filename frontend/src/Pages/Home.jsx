@@ -6,7 +6,11 @@ import heroImg02 from '../assets/images/hero-img02.jpg'
 import heroVideo from '../assets/images/hero-video.mp4'
 import Subtitle from './../shared/Subtitle';
 import worldImg from '../assets/images/world.png'
+
+
 import SearchBar from '../shared/SearchBar'; 
+import ServiceList from '../services/ServiceList';
+
 
 const Home = () => {
   return (
@@ -33,7 +37,7 @@ const Home = () => {
 
            <Col lg='2'>
             <div className="hero__img_box mt-4">
-            <video src={heroVideo} alt="" controls/>
+            <video src={heroVideo} muted autoPlay loop />
             </div>
           </Col> 
 
@@ -49,6 +53,33 @@ const Home = () => {
             
         </Row>
       </Container>
+                        {/* hero section start kela hite */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg='3'>
+              <h5 className="services__subtitle">What we serve</h5>
+              <h2 className="services__title">We offer our best services</h2>
+            </Col>
+            <ServiceList/>
+          </Row>
+        </Container>
+      </section>
+
+                    {/* featured tour section start kela hite */}
+                    <section>
+                      <Container>
+                        <Row>
+                          <Col>
+                            <Subtitle subtitle={'Explore'}/>
+                            <h2 className="featured__tour-title">Our Features Tours</h2>
+                          </Col>
+                        </Row>
+                      </Container>
+                    </section>
+                    {/* featured tour section end kela hite */}
+
+
     </>
   );
 }
