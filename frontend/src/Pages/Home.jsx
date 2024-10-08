@@ -10,12 +10,13 @@ import worldImg from '../assets/images/world.png'
 
 import SearchBar from '../shared/SearchBar'; 
 import ServiceList from '../services/ServiceList';
+import FeaturedTourList from '../components/Featured-tour/FeaturedTourList';
 
 
 const Home = () => {
   return (
     <>
-      <Container>
+      <Container className='page1'>
         <Row>
           <Col lg='6'>
             <div className="hero__content">
@@ -53,6 +54,7 @@ const Home = () => {
             
         </Row>
       </Container>
+
                         {/* hero section start kela hite */}
       <section>
         <Container>
@@ -67,14 +69,21 @@ const Home = () => {
       </section>
 
                     {/* featured tour section start kela hite */}
-                    <section>
+                    <section className="featured-tour-section">
                       <Container>
                         <Row>
                           <Col>
-                            <Subtitle subtitle={'Explore'}/>
-                            <h2 className="featured__tour-title">Our Features Tours</h2>
+                          <div className="hero__subtitle d-flex align-items-center">
+                            <Subtitle subtitle={'Our Featured Tours'} />
+                            {/* <img src={worldImg} alt="World" />  */}
+                          </div>
                           </Col>
+                          
                         </Row>
+                        <Row>
+                        <FeaturedTourList/>
+                        </Row>
+                        
                       </Container>
                     </section>
                     {/* featured tour section end kela hite */}

@@ -2,7 +2,9 @@
 
 
 .search__bar{
-    padding:0.5rem 1rem;
+    padding:1rem 1rem;
+    /* margin-top: 40px; */
+    margin-bottom: 80px;
     border-radius:50px;
     box-shadow: rgba(17,13,46,0.15) 0px 48px 100px 0px;
     width: max-content;

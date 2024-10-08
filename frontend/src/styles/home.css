@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
 
 
 .hero__subtitle img{
@@ -43,15 +44,19 @@
     padding-top: 2rem;
 }
 
+.page1{
+    border-bottom: 2px solid gold;
+}
+
 
 .services__subtitle{
-    font-size: 2.2.rem;
-    font-weight: 500;
+    /* font-size: 3vw   ; */
+    font-weight: 1000;
     color:#ef3c3c;
     font-family:"Island Moments", cursive;
-    width: max-content;
+    width:100%;
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 70px;
     /* padding: 0px 0.5rem; */
     padding-right: 1rem;
   /* background-color: red; */
@@ -64,12 +69,40 @@
     font-size: 2.5rem;
     font-weight: 500;
     /* width: max-content; */
-    padding: 0px 0.5rem;
+    /* background-color: red; */
+    /* padding: 0px 0.5rem;  */
     padding-right: 1rem;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 50px;
     font-weight: 500;
     font-size: 1.7rem;
 }
 
+/* .featured__tour-title {
+    font-family: 'Island Moments', cursive;
+  } */
 
+  .cursive-font {
+    font-family: 'Island Moments', cursive;
+  }
+
+  .subtitle{
+    /* margin-top: 50px; */
+    font-family: 'Island Moments', cursive;
+  }
+
+  
+
+  .featured__tour-title{
+/* max-width: 500px; */
+/* background-color: red; */
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+
+  }
+
+  .featured-tour-section {
+    margin-top: 80px; /* Adjust the value as needed */
+  }
